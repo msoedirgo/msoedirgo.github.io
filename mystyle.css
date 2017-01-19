@@ -3,12 +3,14 @@ body{
   }
   h1{
     color: black;
-    margin-left:200px;
+    margin-left:500px;
   }
 div{
-  border-style: dotted;
-  border-width: 2px;
+  font-family: arial;
   -webkit-column-count:3;/*chrome,safari,opera*/
-  -moz-column-count:3;/*firefox*?
+  -moz-column-count:3;/*firefox*/
   column-count:3;
+  }
+#columns{
+  background-color: pink;
 }
