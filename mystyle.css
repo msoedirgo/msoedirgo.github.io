@@ -1,11 +1,13 @@
 body{
-  background-color: white;
+  background-color: grey;
   }
   h1{
     color: black;
     margin-left:200px;
   }
 div{
+  border-style: dotted;
+  border-width: 2px;
   -webkit-column-count:3;/*chrome,safari,opera*/
   -moz-column-count:3;/*firefox*?
   column-count:3;
