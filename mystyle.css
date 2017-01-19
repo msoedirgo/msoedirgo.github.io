@@ -1,9 +1,10 @@
+
 body{
   background-color: grey;
   }
   h1{
     color: black;
-    margin-left:500px;
+    text-align: center;
   }
 div{
   font-family: arial;
@@ -16,4 +17,13 @@ div{
   }
 #columns{
   background-color: pink;
+}
+#left-col{
+  background-color: lightblue;
+}
+#mid-col{
+  background-color: pink;
+}
+#right-col{
+  background-color: lightblue;
 }
