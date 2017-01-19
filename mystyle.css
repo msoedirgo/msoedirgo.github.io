@@ -1,10 +1,12 @@
 body{
-  background-color: grey;
+  background-color: lightgrey;
   margin:0;
 }
   h1{
     color: black;
     text-align: center;
+    border-style: solid;
+    border-color: hotpink;
 }
 
 ul {
