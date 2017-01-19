@@ -1,5 +1,5 @@
 body{
-  background-color: wheat;
+  background-color: lightgray;
   margin:0;
 }
   h1{
@@ -10,6 +10,7 @@ body{
 .one{
     border-style: solid;
     border-color: hotpink;
+    padding:25px;
 }
 
 ul {
@@ -17,7 +18,7 @@ ul {
     margin: 0;
     padding: 0;
     width: 25%;
-    background-color: #f1f1f1;
+    background-color: antiquewhite;
     position: fixed;
     height: 100%;
     overflow: auto;
