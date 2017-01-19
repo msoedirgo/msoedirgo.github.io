@@ -1,10 +1,13 @@
 body{
-  background-color: lightgrey;
+  background-color: wheat;
   margin:0;
 }
   h1{
     color: black;
     text-align: center;
+}
+
+.one{
     border-style: solid;
     border-color: hotpink;
 }
