@@ -10,6 +10,9 @@ div{
   -webkit-column-count:3;/*chrome,safari,opera*/
   -moz-column-count:3;/*firefox*/
   column-count:3;
+  -webkit-column-gap:50px;/*chrome,safari,opera*/
+  -moz-column-gap:50px;/*firefox*/
+  column-gap: 50px;
   }
 #columns{
   background-color: pink;
