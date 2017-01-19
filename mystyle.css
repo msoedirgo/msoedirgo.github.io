@@ -1,7 +1,12 @@
 body{
-  background-color: teal;
+  background-color: white;
   }
   h1{
-    color: navy blue;
-    margin-left:100px;
+    color: black;
+    margin-left:200px;
   }
+div{
+  -webkit-column-count:3;/*chrome,safari,opera*/
+  -moz-column-count:3;/*firefox*?
+  column-count:3;
+}
