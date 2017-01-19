@@ -1,4 +1,3 @@
-
 body{
   background-color: grey;
   }
@@ -19,11 +18,14 @@ div{
   background-color: pink;
 }
 #left-col{
+  float: left;
   background-color: lightblue;
 }
 #mid-col{
+  float: center;
   background-color: pink;
 }
 #right-col{
+  float: right
   background-color: lightblue;
 }
