@@ -1,42 +1,75 @@
-body{
-  background-color: lightgray;
-  margin:0;
-}
-  h1{
-    color: red;
-    text-align: center;
-}
-
-.one{
-    border-style: solid;
-    border-color: hotpink;
-    padding:25px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: antiquewhite;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-li a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
+#header { 
+2     padding:2px; 
+3     background-color:grey; 
+4     color:white; 
+5     text-align:center; 
+6     font-family: sans-serif; 
+7 } 
+8 #kiri { 
+9     width: 250px; 
+10     background-color:lightgrey; 
+11     float:left; 
+12     text-align: left; 
+13     color:chocolate; 
+14     font-family: fantasy; 
+15     padding:5px; 
+16 } 
+17 
+ 
+18 #tengah { 
+19     width: 500px; 
+20     background-color:blue; 
+21     float:left; 
+22     text-align: center; 
+23     color:aqua; 
+24     font-family: cursive; 
+25     padding:3px; 
+26 } 
+27 
+ 
+28 #kanan { 
+29     width: auto; 
+30     overflow: auto; 
+31     background-color: azure; 
+32     text-align: right; 
+33     color:red; 
+34     font-family:monospace; 
+35     padding:10px; 
+36 } 
+37 
+ 
+38 #footer { 
+39     background-color:grey; 
+40     color:black; 
+41     clear:both; 
+42     text-align:center; 
+43     padding:5px;  
+44 } 
+45 
+ 
+46 ul { 
+47     list-style-type: none; 
+48     margin: 0; 
+49     padding: 0; 
+50     overflow: hidden; 
+51     background-color: #333; 
+52 } 
+53 
+ 
+54 li { 
+55     float: left; 
+56 } 
+57 
+ 
+58 li a { 
+59     display: block; 
+60     color: white; 
+61     text-align: center; 
+62     padding: 14px 90px; 
+63     text-decoration: none; 
+64 } 
+65 
+ 
+66 li a:hover { 
+67     background-color: #111; 
+68 } 
