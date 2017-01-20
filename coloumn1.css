@@ -1,0 +1,44 @@
+#header {
+    padding:2px;
+    background-color:grey;
+    color:white;
+    text-align:center;
+    font-family: sans-serif;
+}
+#kiri {
+    width: 250px;
+    background-color:lightgrey;
+    float:left;
+    text-align: left;
+    color:chocolate;
+    font-family: fantasy;
+    padding:5px;
+}
+
+#tengah {
+    width: 500px;
+    background-color:blue;
+    float:left;
+    text-align: center;
+    color:aqua;
+    font-family: cursive;
+    padding:3px;
+}
+
+#kanan {
+    width: auto;
+    overflow: auto;
+    background-color: azure;
+    text-align: right;
+    color:red;
+    font-family:monospace;
+    padding:10px;
+}
+
+#footer {
+    background-color:grey;
+    color:black;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
