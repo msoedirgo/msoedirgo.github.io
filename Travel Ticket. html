@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>Travel Ticket.com</h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="#">Sign-in</a></li>
+  <li><a href="#">Sign-up</a></li>
+  <li><a href="#">Contact Us</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <h1>How to Order</h1>
+  <p>This is how you order</p>
+</article>
+
+<footer>Copyright &copy; Travel Ticket.com</footer>
+</div>
+
+</body>
+</html>
