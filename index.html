@@ -1,4 +1,4 @@
-<html>
+<<html>
   <link rel="stylesheet" type="text/css" href="mystyle.css">
   <head>
     <meta charset="UTF-8">
@@ -20,24 +20,28 @@
     <div class="flex-container">
       <div class="flex-item">
         <h3>Flight Destination</h3>
-        <h4>From:</h4>
+        <h4>Origin:</h4>
           <form action="demo_form.asp" method="post">
             <input type="text" name="ffrom" required>
             <input type="submit" value="OK">
           </form>
-        <h4>To:</h4>
+        <h4>Destination:</h4>
           <form action="demo_form.asp" method="post">
             <input type="text" name="fto" required>
             <input type="submit" value="OK">
           </form>
         <h3>Date of Flight</h3>
-        <script src="http://code.jquery.com"/ui/1.10.1/jquery-ui.js"></script>
-        <script>
-           $(function() {
-               $("calendar").datepicker();                                                    });
-                           </script>
-           <p>Calendar: <input type="text" id="calendar"></p>
-                                                        </div>
+        <h4>From:</h4>
+          <script type="text/javascript" src="http://www.snaphost.com/jquery/Calendar.aspx"></script> &nbsp;
+        <h4>To:</h4>
+          <script type="text/javascript">
+            $(function() {
+            $("#SnapHost_Calendar2")
+            .datepicker ({ showOn:'both', buttonImage: 'http://www.snaphost.com/jquery/calendar.gif', buttonImageOnly: true,
+                          changeMonth: true, showOtherMonths:true, selectOtherMonths: true});});</script>
+        <input name="SnapHost_Calendar2" id="SnapHost_Calendar2" type="text"/>
+                                                        
+      </div>
                                                                     
     </div>
   </body>
