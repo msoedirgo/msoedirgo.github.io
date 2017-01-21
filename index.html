@@ -1,8 +1,17 @@
+<!DOCTYPE html>
 <<html>
-  <link rel="stylesheet" type="text/css" href="mystyle.css">
   <head>
     <meta charset="UTF-8">
- 
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  
+    <script>
+    $(document).ready(function() {
+    $("#datepicker").datepicker();
+    });
+    </script>
   </head>
   <body>
       <h1 class="page-title">aTicket</h1>
@@ -32,14 +41,13 @@
           </form>
         <h3>Date of Flight</h3>
         <h4>From:</h4>
-          <script type="text/javascript" src="http://www.snaphost.com/jquery/Calendar.aspx"></script> &nbsp;
+          <form>
+              <input id="datepicker"/>
+          </form>
         <h4>To:</h4>
-          <script type="text/javascript">
-            $(function() {
-            $("#SnapHost_Calendar2")
-            .datepicker ({ showOn:'both', buttonImage: 'http://www.snaphost.com/jquery/calendar.gif', buttonImageOnly: true,
-                          changeMonth: true, showOtherMonths:true, selectOtherMonths: true});});</script>
-        <input name="SnapHost_Calendar2" id="SnapHost_Calendar2" type="text"/>
+          <form>
+              <input id="datepicker"/>
+        </form>
                                                         
       </div>
                                                                     
