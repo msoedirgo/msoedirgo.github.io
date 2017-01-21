@@ -16,23 +16,29 @@
       <div class="contact-btn"><a>Contact</a>
       </div>
     </nav>
-    <img src="C:\Users\Toshiba\Pictures\aticket pics\pic1">
-    <div class="kiri">
-      <h3>Flight Destination</h3>
-      <form action="demo_form.asp" method="post">
-        <input type="text" name="fdestination" required>
-        <input type="submit" value="OK">
-      </form>    
-    </div>
-    <div class="tengah">
-      <h3>Date of Flight</h3>
-      <form action="demo_form.asp" method="post">
-          <input type="text" name="fdate" required>
-          <input type="submit" value="OK">
-      </form>
-    </div>
-    <div class="kanan">
-      <h3>Search Flight</h3>
+    
+    <div class="flex-container">
+      <div class="flex-item">
+        <h3>Flight Destination</h3>
+        <h4>From:</h4>
+          <form action="demo_form.asp" method="post">
+            <input type="text" name="ffrom" required>
+            <input type="submit" value="OK">
+          </form>
+        <h4>To:</h4>
+          <form action="demo_form.asp" method="post">
+            <input type="text" name="fto" required>
+            <input type="submit" value="OK">
+          </form>
+        <h3>Date of Flight</h3>
+        <script src="http://code.jquery.com"/ui/1.10.1/jquery-ui.js"></script>
+        <script>
+           $(function() {
+               $("calendar").datepicker();                                                    });
+                           </script>
+           <p>Calendar: <input type="text" id="calendar"></p>
+                                                        </div>
+                                                                    
     </div>
   </body>
 </html>
