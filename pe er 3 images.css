@@ -17,3 +17,8 @@ body {
     height: auto;
     margin: 10px;
 }
+
+.desc {
+    padding: 10px;
+    text-align: center;
+}
