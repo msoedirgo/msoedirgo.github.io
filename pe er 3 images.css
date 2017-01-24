@@ -3,14 +3,14 @@
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    width: 400px;
-    height: 250px;
+    width: 100%;
+    height: auto;
     background-color: white;
 }
 
 .flex-item {
     background-color: white;
-    width: 100px;
-    height: 100px;
+    width: 25%;
+    height: auto;
     margin: 10px;
 }
