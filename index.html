@@ -30,7 +30,7 @@
     <div class="flex-container">
       <div class="flex-item">
         <h3>1. Flight Destination</h3>
-        <p>Origin:</p>
+        <h4>Origin:</h4>
           <form action="action-page.php">
             <select name="city">
               <option value="BDO">Bandung</option>
@@ -43,13 +43,20 @@
             </select>
           </form>
         <h4>Destination:</h4>
-          <form action="demo_form.asp" method="post">
-            <input type="text" name="fto" required>
-            <input type="submit" value="OK">
+          <form action="action-page.php">
+            <select name="city">
+              <option value="BDO">Bandung</option>
+              <option value="DPS">Denpasar</option>
+              <option value="CGK">Jakarta</option>
+              <option value="KNO">Medan</option>
+              <option value="SRG">Semarang</option>
+              <option value="SUB">Surabaya</option>
+              <option value="SIN">Singapore</option>
+            </select>
           </form>
           <form action="">
-            <input type="radio" name="one-way" value="one-way">One-Way<br>
-            <input type="radio" name="two-way" value="two-way">Two-Way<br>
+            <input type="radio" name="ways" value="one-way">One-Way<br>
+            <input type="radio" name="ways" value="two-way">Two-Way<br>
           </form>
         <h3>2. Date of Flight</h3>
         <h4>Depart:</h4>
