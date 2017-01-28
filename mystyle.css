@@ -6,7 +6,8 @@
      color: darkblue;
 }
 nav {
-      background-color:lightblue;
+     background-color:lightblue;
+     font-family: calibri;
 }
 nav li {
      display: inline;
@@ -18,7 +19,7 @@ nav ul {
 }
 .contact-btn a {
      cursor: pointer;
-     padding: 8px 20px;
+     padding: 6px 15px;
      border: 1px solid #204156;
      position: fixed;
 }
@@ -50,4 +51,8 @@ li a:hover {
      width: 35%;
      height: 200px;
      margin: 10px;
+}
+
+h3 {
+     font-family: calibri;
 }
