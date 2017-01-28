@@ -1,8 +1,8 @@
 .page-title{
      text-align: left;
      margin-left: 30px;
-     font-family: roboto;
-     font-weight: 400;
+     font-family: calibri;
+     font-weight: 500;
      color: darkblue;
 }
 nav {
@@ -50,7 +50,7 @@ li a:hover {
 .flex-item {
      width: 35%;
      height: 200px;
-     margin: 10px;
+     margin: 5px;
 }
 
 h3 {
