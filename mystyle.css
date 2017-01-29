@@ -67,6 +67,7 @@ p{
 table,th,td {
      border: 1px lightgray;
      border-collapse: collapse;
+     padding 10px;
 }
 
 input[type=submit], input[type=reset] {
