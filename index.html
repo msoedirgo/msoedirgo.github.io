@@ -6,19 +6,30 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
   
   <script>
   $(document).ready(function() {
     $("#datepicker").datepicker();  });
   </script>
 
+  <script>
+  $(document).ready(function() {
+    $(".slider > div:gt(0)").hide();
+      setInterval(function() {
+        $('.slider > div:first')
+          .fadeOut(100).next().fadeIn(900).end().appendTo('.slider');
+      }, 3000);
+  });
+    </script>
+    
   </head>
   <body>
       <h1 class="page-title">aTicket</h1>
     <nav>
     <ul>
       <li><a href="#Flight">Flight</a></li>
-      <li><a href="#Hotel">Hotel</a></li>
+      <li><a href="#Hotel">Hotel</a></li
       <li><a href="#Promo">Promo</a></li>
       <li><a href="login">Log In</a></li>      
       <li><a href="validationForm">Sign Up</a></li>
