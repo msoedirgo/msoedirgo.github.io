@@ -14,14 +14,14 @@
   </script>
 
   </head>
-i  <body>
+  <body>
       <h1 class="page-title">aTicket</h1>
     <nav>
     <ul>
       <li><a href="#Flight">Flight</a></li>
       <li><a href="#Hotel">Hotel</a></li>
       <li><a href="#Promo">Promo</a></li>
-      <li><a href="login">Log In</a></li>
+      <li><a href="login">Log In</a></li>      
       <li><a href="validationForm">Sign Up</a></li>
       <div class="contact-btn"><a>Contact</a>
       </div>
@@ -32,7 +32,7 @@ i  <body>
       <div class="flex-item">
         <h3>1. Flight Destination</h3>
         <h4>Origin:</h4>
-          <form action="action-page.php">
+          <form action="action-page.php">            
             <select name="city">
               <option selected="" value="Default">(Please select a city)</option>
               <option value="BDO">Bandung</option>
@@ -71,24 +71,34 @@ i  <body>
               <input id="datepicker"/>
           </form>
         <h3>3. Passenger</h3>
-        <h4>Adult: <italic>above 12yo</italic></h4>
-          <form action="action-page.php">
-            <select name="number adult">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </form>
-        <h4>Child: <italic>under 12yo</italic></h4>
-          <form action="action-page.php">
-            <select name="number child">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </form>
+        <table>
+          <tr>
+            <td>Adult: above 12yo</td>
+            <td><form action="action-page.php">
+                  <select name="number adult">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Child: under 12yo</td>
+            <td><form action="action-page.php">
+                  <select name="number child">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </form>
+            </td>
+          </tr>
+        </table>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
       </div>
       <div class="flex-item">
         <img src="http://blog.raysoutdoors.com.au/wp-content/uploads/2014/10/TravellingTips_TOPBANNER.jpg" alt="travel pic" width="500" height="500">
