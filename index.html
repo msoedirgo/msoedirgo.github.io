@@ -14,7 +14,7 @@
   </script>
 
   </head>
-  <body>
+i  <body>
       <h1 class="page-title">aTicket</h1>
     <nav>
     <ul>
@@ -34,6 +34,7 @@
         <h4>Origin:</h4>
           <form action="action-page.php">
             <select name="city">
+              <option selected="" value="Default">(Please select a city)</option>
               <option value="BDO">Bandung</option>
               <option value="DPS">Denpasar</option>
               <option value="CGK">Jakarta</option>
@@ -46,6 +47,7 @@
         <h4>Destination:</h4>
           <form action="action-page.php">
             <select name="city">
+              <option selected="" value="Default">(Please select a city)</option>
               <option value="BDO">Bandung</option>
               <option value="DPS">Denpasar</option>
               <option value="CGK">Jakarta</option>
@@ -69,7 +71,7 @@
               <input id="datepicker"/>
           </form>
         <h3>3. Passenger</h3>
-        <h4>Adult: above 12yo</h4>
+        <h4>Adult: <italic>above 12yo</italic></h4>
           <form action="action-page.php">
             <select name="number adult">
               <option value="1">1</option>
@@ -78,7 +80,7 @@
               <option value="4">4</option>
             </select>
           </form>
-        <h4>Child: under 12yo</h4>
+        <h4>Child: <italic>under 12yo</italic></h4>
           <form action="action-page.php">
             <select name="number child">
               <option value="1">1</option>
