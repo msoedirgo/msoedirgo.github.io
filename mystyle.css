@@ -80,4 +80,8 @@ input[type=submit], input[type=reset] {
     cursor: pointer;
 }
 
+.slider{margin: 50px auto; width: 250px; height: 250px}
+.slider > div {position:absolute}
+img {width:250px; height:250px}
+     
 
