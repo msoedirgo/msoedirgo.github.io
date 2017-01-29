@@ -9,8 +9,7 @@
   
   <script>
   $(document).ready(function() {
-    $("#datepicker").datepicker();
-  });
+    $("#datepicker").datepicker();  });
   </script>
 
   </head>
@@ -73,7 +72,7 @@
         <h3>3. Passenger</h3>
         <table>
           <tr>
-            <td>Adult: above 12yo</td>
+            <td><p>Adult: above 12 years old</p></td>
             <td><form action="action-page.php">
                   <select name="number adult">
                     <option value="1">1</option>
@@ -85,7 +84,7 @@
             </td>
           </tr>
           <tr>
-            <td>Child: under 12yo</td>
+            <td><p>Child: under 12 years old</p></td>
             <td><form action="action-page.php">
                   <select name="number child">
                     <option value="1">1</option>
@@ -97,6 +96,7 @@
             </td>
           </tr>
         </table>
+        <br><br>
         <input type="reset" value="Reset">
         <input type="submit" value="Submit">
       </div>
