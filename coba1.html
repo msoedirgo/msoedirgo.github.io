@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<<html><head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" type="text/css" href="mystyle.css"> 
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+  <script src="js/jquery-1.11.2.min.js"></script>     
+  <script> 
+   $(document).ready(function() { 
+     $("#datepicker").datepicker();  }); 
+  </script> 
+ 
+ 
+  <script> 
+   $(document).ready(function() { 
+     $(".slider > div:gt(0)").hide(); 
+       setInterval(function() { 
+         $('.slider > div:first') 
+           .fadeOut(100).next().fadeIn(900).end().appendTo('.slider'); 
+       }, 3000); 
+   }); 
+  </script> 
+       
+</head> 
+<body onload="focus();"> 
+     <h1 class="page-title">aTicket</h1> 
+     <nav> 
+     <ul>        
+       <li><a href="#Flight">Flight</a></li> 
+       <li><a href="#Hotel">Hotel</a></li 
+       <li><a href="#Promo">Promo</a></li> 
+       <li><a href="login">Log In</a></li>       
+       <li><a href="validationForm">Sign Up</a></li> 
+       <div class="contact-btn"><a>Contact</a> 
+       </div> 
+     </ul> 
+     </nav> 
+     <div class="flex-container"> 
+        <div class="flex-item"> 
+          <form name="validity" onsubmit="return formValidation();" action="confirm.html">
+             <h3>1. Flight Destination</h3> 
+             <ul>
+             <li><label for="origin">Origin:</label></li>                         
+             <li><select name="city"> 
+                    <option selected="" value="Default">(Please select a city)</option> 
+                    <option value="BDO">Bandung</option> 
+                    <option value="DPS">Denpasar</option> 
+                    <option value="CGK">Jakarta</option> 
+                    <option value="KNO">Medan</option> 
+                    <option value="SRG">Semarang</option> 
+                    <option value="SUB">Surabaya</option> 
+                    <option value="SIN">Singapore</option> 
+                 </select> 
+             </li> 
+             <li><label for="destination">Destination:</label></li>              <li><select name="city"> 
+                    <option selected="" value="Default">(Please select a city)</option> 
+                    <option value="BDO">Bandung</option> 
+                    <option value="DPS">Denpasar</option> 
+                    <option value="CGK">Jakarta</option> 
+                    <option value="KNO">Medan</option> 
+                    <option value="SRG">Semarang</option> 
+                    <option value="SUB">Surabaya</option> 
+                    <option value="SIN">Singapore</option> 
+                 </select> 
+             </li>
+             <li><input type="radio" name="ways" value="one-way"/><span>One-Way</span></li> 
+             <li><input type="radio" name="ways" value="two-way"/><span>Two-Way</span></li>> 
+
+             <h3>2. Date of Flight</h3> 
+             <li><label for="depart">Depart:</label></li> 
+                    <input id="datepicker"/>   
+             <li><label for:"return">Return:</label></li> 
+                    <input id="datepicker"/> 
+             <h3>3. Passenger</h3> 
+             <table> 
+                <tr> 
+                  <td><p>Adult: above 12 years old</p></td> 
+                  <td><select name="number adult"> 
+                        <option value="0">0</option> 
+                        <option value="1">1</option> 
+                        <option value="2">2</option> 
+                        <option value="3">3</option> 
+                        <option value="4">4</option> 
+                      </select> 
+                  </td> 
+                </tr> 
+                <tr> 
+                  <td><p>Child: under 12 years old</p></td> 
+                  <td><select name="number child"> 
+                        <option value="0">0</option> 
+                        <option value="1">1</option> 
+                        <option value="2">2</option> 
+                        <option value="3">3</option> 
+                        <option value="4">4</option> 
+                      </select> 
+                  </td> 
+                </tr> 
+             </table> 
+             <br> 
+             <input type="reset" value="Reset"> 
+             <input type="submit" value="Submit"> 
+        </div> 
+        <div class="flex-item"> 
+          <div class="slider"> 
+            <div><img src="http://blog.raysoutdoors.com.au/wp-content/uploads/2014/10/TravellingTips_TOPBANNER.jpg" alt="travel pic"></div> 
+            <div><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpXRUXhAyDi79EikUkTU7a9pXJGPSb21ImDgMexEdQugr57duGV8HdMjI" alt="travel pic2"></div> 
+            <div><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFgQuDtQt_FRwYl1Nk5EBfDFhW2-MqI2AkUWCI-IBHeQJcM9uc1nPH6kr0" alt="travel pic3"></div> 
+          </div> 
+        </div> 
+     </div> 
+   </body> 
+ </html> 
