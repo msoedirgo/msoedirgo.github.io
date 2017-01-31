@@ -41,7 +41,7 @@
           <form name="validity" onsubmit="returnformValidation();" action="confirm.html">             
              <ul>
              <h3>1. Flight Destination</h3>
-             <li><label for="origin">Origin:</label></li>                         
+             <li><label for="origin">Origin:</label></li>                                     
              <li><select name="city" required> 
                     <option selected="" value="Default">(Please select a city)</option> 
                     <option value="BDO">Bandung</option> 
@@ -72,32 +72,26 @@
              <li><input type="radio" name="ways" value="returndate">Return:</li> 
              <li><input id="datepicker"></li> 
              <h3>3. Passenger</h3> 
-             <table> 
-                <tr> 
-                  <td><p>Adult: above 12 years old</p></td> 
-                  <td><select name="numberadult" required> 
+             <li>Adult: above 12 years old<span> 
+               <select name="numberadult" required> 
+                       <option value="0">0</option> 
+                       <option value="1">1</option> 
+                       <option value="2">2</option> 
+                       <option value="3">3</option> 
+                       <option value="4">4</option> 
+               </select></span></li> 
+                 
+             <li>Child: under 12 years old<span> 
+               <select name="numberchild" required> 
                         <option value="0">0</option> 
                         <option value="1">1</option> 
                         <option value="2">2</option> 
                         <option value="3">3</option> 
                         <option value="4">4</option> 
-                      </select> 
-                  </td> 
-                </tr> 
-                <tr> 
-                  <td><p>Child: under 12 years old</p></td> 
-                  <td><select name="numberchild" required> 
-                        <option value="0">0</option> 
-                        <option value="1">1</option> 
-                        <option value="2">2</option> 
-                        <option value="3">3</option> 
-                        <option value="4">4</option> 
-                      </select> 
-                  </td> 
-                </tr> 
-             </table> 
+               </select></span></li>
+                   
              <br> 
-              
+            </ul> 
              <input type="submit" value="Submit" required> 
         </div> 
         <div class="flex-item"> 
