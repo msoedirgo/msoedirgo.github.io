@@ -149,6 +149,4 @@ window.location.reload()
 return true;
 }
 }
-function returnformValidation(); {
-  if var city
 
