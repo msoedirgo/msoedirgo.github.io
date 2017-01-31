@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<<html>
+<html>
 <head>
   <meta charset="UTF-8"> 
   <link rel="stylesheet" type="text/css" href="mystyle.css"> 
@@ -10,8 +10,7 @@
   <script> 
    $(document).ready(function() { 
      $("#datepicker").datepicker();  }); 
-  </script> 
- 
+  </script>  
  
   <script> 
    $(document).ready(function() { 
@@ -20,9 +19,9 @@
          $('.slider > div:first') 
            .fadeOut(100).next().fadeIn(900).end().appendTo('.slider'); 
        }, 3000); 
-   }); 
+   });   
   </script> 
-       </head> 
+</head> 
 <body onload="focus();"> 
      <h1 class="page-title">aTicket</h1> 
      <nav>      
@@ -32,8 +31,7 @@
        <li><a href="#Promo">Promo</a></li> 
        <li><a href="login">Log In</a></li>       
        <li><a href="validationForm">Sign Up</a></li> 
-       <div class="contact-btn"><a>Contact</a> 
-       </div> 
+       <div class="contact-btn"><a>Contact</a>        </div> 
      </ul> 
      </nav> 
      <div class="flex-container"> 
@@ -65,13 +63,11 @@
                     <option value="SIN">Singapore</option> 
                  </select> 
              </li>
-             <li><input type="radio" name="ways" value="one-way" required><span>One-Way</span></li> 
-             <li><input type="radio" name="ways" value="two-way" required><span>Two-Way</span></li> 
 
              <h3>2. Date of Flight</h3> 
              <li><label for="departdate">Depart:</label></li> 
                     <input id="datepicker" required>   
-             <li><label for="returndate">Return:</label></li> 
+             <li><input type="radio" name="ways" value="returndate">Return:</li> 
                     <input id="datepicker"> 
              <h3>3. Passenger</h3> 
              <table> 
