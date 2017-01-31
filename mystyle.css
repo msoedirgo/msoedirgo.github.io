@@ -40,6 +40,7 @@ li a:hover {
 ul, li {
      list-style: none;
      font-family : calibri, century gothic; color: gray;
+     margin:5px 10px;
 }
 
 .flex-container {
