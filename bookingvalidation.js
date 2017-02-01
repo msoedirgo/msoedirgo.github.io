@@ -9,6 +9,10 @@ function bookingValidation() {
 if (cityselect(uorigin)) {
 if (cityselect(udestination)) {
 if (passenger(unumberadult)) {
+if (allletter(uname)) {
+if (allnumber(ucell)) {
+}
+}
 }
 }
 }  
