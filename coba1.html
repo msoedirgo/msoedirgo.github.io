@@ -8,11 +8,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
   <script src="js/jquery-1.11.2.min.js"></script>     
   
-  <script type="text/javascript"> 
-    var $j = jQuery.noConflict()
-    $j(function() { 
-      $j("#datepicker").datepicker();
-    });
+  <script> 
+    $(document).ready(function() { 
+     $("#datepicker").datepicker();  
+    }); 
   </script>  
  
   <script> 
@@ -28,7 +27,7 @@
   <script src="bookingvalidation.js"></script>
 
 </head> 
-<body onload="focus();"> 
+<body onload="document.validity.uorigin.focus();"> 
      <h1 class="page-title">aTicket</h1> 
      <nav>      
        <ul>       
