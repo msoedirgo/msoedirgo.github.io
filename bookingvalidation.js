@@ -1,4 +1,4 @@
-function returnformValidation() {
+function bookingValidation() {
 var uorigin = document.validity.origin;
 var udestination = document.validity.destination;
 var udepartdate = document.validity.departdate;
