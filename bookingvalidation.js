@@ -1,8 +1,10 @@
 function bookingValidation() {
-var uorigin = document.validity.origin;
-var udestination = document.validity.destination;
-var udepartdate = document.validity.departdate;
-var unumberadult = document.validity.numberadult;
+  var uorigin = document.validity.origin;
+  var udestination = document.validity.destination;
+  var udepartdate = document.validity.departdate;
+  var unumberadult = document.validity.numberadult;
+  var uname = document.validity.username;
+  var ucell = document.validity.phonenumber;
 
 if (cityselect(uorigin)) {
 if (cityselect(udestination)) {
@@ -41,4 +43,33 @@ function passenger(unumberadult) {
   }
   else {
     return true
+  }
+
+function allLetter(uname) 
+ {  
+ var letters = /^[A-Za-z]+$/; 
+ if(uname.value.match(letters)) 
+ { 
+ return true; 
+ } 
+ else 
+ { 
+ alert('Username must have alphabet characters only'); 
+ uname.focus(); 
+ return false; 
+ } 
+ } 
+  
+function allnumber(ucell) {
+  var number = /^[0-9]+$/;
+  if (!ucell.value.match(number)) {
+    alert ("Phone number have to be all number");
+    return false;
+  };
+  if (ucell.length < 11) {
+    alert ("Your phone number missing some digits");
+    return false;
+  }
+  else {
+  return true;
   }
