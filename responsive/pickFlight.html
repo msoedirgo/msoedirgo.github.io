@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="css/jumbotron.css">
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+      
 </head>
 <body>
 
 <div class="jumbotron text-center" style="background-image: url(aticketpics/pic9.jpg); background-size: cover;">
-    <h1>aTicket</h1>
-  <p>your booking solution</p> 
+    <h2>aTicket</h2>
+  <p style="color:black;">your booking solution</p> 
 </div>
   
 <div class="container">
@@ -48,14 +49,15 @@
     <div class="col-sm-4">
       <h3>Choose you Time</h3>
         <li><label for="departdate">Depart:</label></li> 
-             <li><input id="datepicker" required></li>   
+        <li><input id="datepicker" required></li>   
         <li><input type="radio" name="ways" value="returndate">Return:</li> 
-             <li><input id="datepicker"></li>
+        <li><input id="datepicker"></li>
         
     </div>
     <div class="col-sm-4">
-      <h3>Choose your Date</h3>        
-      <li>Adult: above 12 years old<span> 
+      <h3>Choose your Date</h3> 
+      <li><label for="passenger">Passengers</label></li>
+      <li>Adult (above 12 years old) :<span> 
                <select name="numberadult" required> 
                        <option value="0">0</option> 
                        <option value="1">1</option> 
@@ -64,7 +66,7 @@
                        <option value="4">4</option> 
                </select></span></li> 
                  
-             <li>Child: under 12 years old<span> 
+             <li>Child (under 12 years old) :<span> 
                <select name="numberchild" required> 
                         <option value="0">0</option> 
                         <option value="1">1</option> 
@@ -72,12 +74,7 @@
                         <option value="3">3</option> 
                         <option value="4">4</option> 
                </select></span></li>
-      <li>Passenger Contact</li>
-               <li><label for="username">Name:</label></li>
-               <li><input type="text" name="username" size="30" placeholder="Full name " required/></li>
-               <li><label for ="mobilenumber">Mobile Number:</label></li>
-               <li><input type="" name="mobilenumber" size="30" placeholder="Mobile Number" required/></li>
-             <br>  
+        <br>
              <input type="submit" value="Submit" required>   
     </div>
   </div>
