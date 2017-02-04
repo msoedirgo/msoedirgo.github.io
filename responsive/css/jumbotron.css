@@ -1,0 +1,29 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+ul, li {
+     list-style: none;
+     font-family : calibri, century gothic; color: gray;
+     margin:5px 10px;
+}
+
+h3 {
+     font-family: calibri, century gothic; color: gray;
+}
+
+p{
+     font-family: calibri, century gothic; color: gray;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 25px;
+    cursor: pointer;
+}
