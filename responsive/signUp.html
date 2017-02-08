@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign Up Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/formValidation.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Sign Up Form</h2>
+  <form role="form" data-toggle="validator">
+    <div class="form-group">
+        <label for="name">Full Name:</label><br>
+        <input type="name" class="form-control" id="name" placeholder="Enter full name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label><br>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+        <label for="mobile number">Mobile number:</label><br>
+        <input type="mobile number" class="form-control" id="mobilenumber" placeholder="Enter mobile number" required>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword" class="control-label">Password</label><br>
+        <input type="password" data-minlength="6" class="form-control" id="password" placeholder="Password" required>
+    </div>
+    <br>  
+        <Input type="button" name="submit" id="btnSubmit" value= "Submit" onclick = "formValidator()"/>
+    
+  </form>
+</div>
+</body>
+</html>
