@@ -24,10 +24,10 @@
    });   
   </script>
   
-  <script src="bookingvalidation.js"></script>
+  <script src="cobabookingvalidation.js"></script>
 
 </head> 
-<body onload="document.validity.uorigin.focus();"> 
+<body> 
      <h1 class="page-title">aTicket</h1> 
      <nav>      
        <ul>       
@@ -41,7 +41,7 @@
      </nav> 
      <div class="flex-container"> 
         <div class="flex-item"> 
-          <form name="validity" onsubmit="return bookingValidation();" action="confirm.html">             
+          <form name="validity" onsubmit="bookingvalidation();" action="confirm.html">             
              <ul>
              <h3>1. Flight Destination</h3>
              <li><label for="origin">Origin:</label></li>                                     
@@ -98,7 +98,7 @@
                <li><label for ="phonenumber">Phone Number:</label></li>
                <li><input type="" name="phonenumber" size="50" required/></li>
              <br>  
-             <input type="submit" value="Submit" required> 
+             <input type="submit" value="Submit" onclick="bookingvalidation();"> 
              </ul>
         </div> 
         <div class="flex-item"> 

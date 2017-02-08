@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
 <head>
+<script>
+function init() {
+    var uOrigin = localStorage.getItem ("origin");
+    var uDestination = localStorage.getItem("destination");
+    document.write("passed value = "+uOrigin);
+    document.write("passed value = "+uDestination);
+    }
+</script>
 </head>
-<body>
-      <h1>Thank You!<h1>
-      <h2>aTicket.com will send your booking to your email</h2>
-      <h2>Have a great day!</h2>
-            
+<body onload= "init();">
 </body>
 </html>
