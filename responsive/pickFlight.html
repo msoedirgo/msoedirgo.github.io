@@ -13,7 +13,11 @@
   <script type="text/javascript"> 
     $(document).ready(function() { 
      $("#datepicker").datepicker();  
-    }); 
+    });
+      
+      // Data Picker Initialization
+      //$('.datepicker').pickadate();
+
   </script> 
       
 </head>
@@ -21,7 +25,7 @@
 <header class="container">
   <div class="row">
     <h1 style = "color: darkblue;" class="col-sm-4">aTicket</h1>
-    <nav class="col-sm-8 text-right">
+    <nav class="col-sm-4 text-right">
         <a href="#">Flight</a>
         <a href="#">Hotel</a>
         <a href="#">Promo</a>
@@ -67,9 +71,11 @@
     <div class="col-sm-4">
       <h3>Choose you Time</h3>
         <li><label for="departdate">Depart:</label></li> 
-        <li><input type="text" id="datepicker" placeholder="dd/mm/yyyy" required></li>   
+        <!--<li><input placeholder="Selected date" type="text" id="date-picker" class="form-control datepicker"></li> -->        
+        <li><input type="date" id="datepicker" placeholder="dd/mm/yyyy" required></li>   
         <li><input type="radio" name="ways" value="returndate">Return:</li> 
-        <li><input type="text" id="datepicker" placeholder="dd/mm/yyyy"></li>
+        <!--<li><input placeholder="Selected date" type="text" id="date-picker" class="form-control datepicker"></li> -->
+        <li><input type="date" id="datepicker" placeholder="dd/mm/yyyy"></li>
         
     </div>
     <div class="col-sm-4">

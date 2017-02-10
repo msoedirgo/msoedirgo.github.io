@@ -2,12 +2,13 @@
 
 $id = $_POST['identitas'];
 $nama = $_POST['nama'];
-
+$deskripsi = $_POST['deskripsi'];
+$gambar = $_POST['gambar'];
 
 echo "ID: " . ($id) . "<br />"; 
-echo "Nama:" . ($nama) . "<br />";
-echo "Deskripsi" . ($)
-
+echo "Nama: " . ($nama) . "<br />";
+echo "Deskripsi " . ($deskripsi) . "<br />";
+echo "Gambar " . ($gambar) . "<br />";
 
 
    $servername = "localhost";
@@ -22,7 +23,7 @@ echo "Deskripsi" . ($)
 
    //echo 'berhasil<br>';
 
-   $sql = "INSERT INTO `produk`(`id`, `nama`, `deskripsi`) VALUES ($id, '$nama', 'tidak ada')";
+   $sql = "INSERT INTO `produk`(`id`, `nama`, `deskripsi`, `gambar`) VALUES ($id, '$nama', '$deskripsi', '$gambar')";
 
    echo $sql;
    $result = $conn->query($sql);
