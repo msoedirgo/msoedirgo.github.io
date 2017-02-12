@@ -15,24 +15,10 @@
      $("#datepicker").datepicker();  
     });
       
-      // Data Picker Initialization
-      //$('.datepicker').pickadate();
-
   </script> 
       
 </head>
 <body onload="bookingvalidation();">
-<!--<header class="container">
-  <div class="row">
-    <h1 style = "color: darkblue;" class="col-sm-4">aTicket</h1>
-    <nav class="col-sm-8 text-right">
-        <a href="#">Flight</a>
-        <a href="#">Hotel</a>
-        <a href="signIn.html">Sign In</a>
-        <a href="signUp.html">Sign Up</a>
-    </nav>
-  </div>
-  </header>-->
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -62,7 +48,7 @@
 
 
 <div class="container">
-<form name = "validity" onsubmit = "bookingvalidation();" action="confirm.html">
+<form name = "pickFlight" onsubmit = "return bookingvalidation();" action="confirm.html" method="POST">
   <div class="row">
     <div class="col-sm-4">
       <h3>Choose your Place</h3>
