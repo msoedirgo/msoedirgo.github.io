@@ -75,5 +75,20 @@ function allnumber(ucell) {
     return false;
   }
   else {
+      var form = $('<form></form>');
+
+        form.attr("method", "post");
+        form.attr("action", confirm.html);
+      
+      var field = $('<input></input>');
+
+        field.attr("type", "hidden");
+        field.attr("name", origincity);
+        field.attr("value", BDO);
+
+        form.append(field);
+      
+        $(document.body).append(form);
+        form.submit();
   return true;
   }
