@@ -4,12 +4,34 @@
   <title>Sign Up Form</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/signin.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/formValidation.js"></script>
 </head>
-<body>
+
+<body id="signUp" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">aTicket</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Flight-Hotel-Travel.html#flight">Flight</a></li>
+        <li><a href="Flight-Hotel-Travel.html#hotel">Hotel</a></li>
+        <li><a href="Flight-Hotel-Travel.html#travel">Travel</a></li>
+        <li><a href="Flight-Hotel-Travel.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <div class="container">
   <h2>Sign Up Form</h2>
@@ -32,8 +54,7 @@
     </div>
     <br>  
         <Input type="button" name="submit" id="btnSubmit" value= "Submit" onclick = "formValidator()"/>
-    <br><br>
-      <p>Back to <a href="index.html">home</a></p>
+    
   </form>
 </div>
 </body>
