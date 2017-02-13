@@ -18,7 +18,7 @@
   </script> 
       
 </head>
-<body onload="bookingvalidation();">
+<body onload="init();">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -48,12 +48,12 @@
 
 
 <div class="container">
-<form name = "pickFlight" onsubmit = "return bookingvalidation();" action="confirm.html" method="POST">
+<form name = "pickFlight" onsubmit = "return init();" action="confirm.html" method="POST">
   <div class="row">
     <div class="col-sm-4">
       <h3>Choose your Place</h3>
         <li><label for="origin">Origin:</label></li>                                     
-                <li><select name="origincity"> 
+                <li><select name="origin"> 
                     <option selected="" value="Default">(Please select a city)</option> 
                     <option value="BDO">Bandung</option> 
                     <option value="DPS">Denpasar</option> 
@@ -65,7 +65,7 @@
                     </select> 
                 </li>
         <li><label for="destination">Destination:</label></li>              
-                <li><select name="destinationcity">
+                <li><select name="destination">
                     <option selected="" value="Default">(Please select a city)</option> 
                     <option value="BDO">Bandung</option> 
                     <option value="DPS">Denpasar</option> 
