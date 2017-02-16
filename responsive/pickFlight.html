@@ -5,10 +5,10 @@
   <title>aTicket: Pick A Flight</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+<!--  <link rel="stylesheet" href="css/bootstrap.min.css">-->
   <link rel="stylesheet" href="css/jumbotron.css">
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+<!--  <script src="js/jquery-3.1.1.min.js"></script>-->
+  <!--<script src="js/bootstrap.min.js"></script>-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,7 +24,7 @@
 </head>
 <body onload="init();">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color:lightblue;">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -46,7 +46,7 @@
 </nav>
 <br><br>
 <div class="jumbotron text-center" style="background-image: url(aticketpics/pic20.jpg); background-size: cover; height: 400px;">
-    <h2 style="color:gray;">Your pick, your decision</h2>
+    <h2>Your pick, your decision</h2>
   <p style="color:black;">we are ready to serve </p> 
 </div>
 
@@ -56,7 +56,6 @@
   <div class="row">
     <div class="col-sm-4">
       <h3>Choose your Place</h3>
-        <div class="form-group">
         <li><label for="origin">Origin:</label></li>                                     
                 <li><select name="origin"> 
                     <option selected="" value="Default">(Please select a city)</option> 
@@ -81,7 +80,6 @@
                     <option value="SIN">Singapore</option> 
                     </select> 
                 </li>
-        </div>
     </div>
     <div class="col-sm-4">
       <h3>Choose you Time</h3>
